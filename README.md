@@ -1,6 +1,6 @@
 # External-ESP
 
-![screenshot](https://s31.postimg.org/umzserl7v/image.png)
+![screenshot](https://raw.githubusercontent.com/coltonon/External-ESP/master/image.png)
 
 Does that^
 
