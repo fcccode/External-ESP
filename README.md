@@ -13,3 +13,13 @@ Uses some no-thrills menu class I wrote, feel free to make it
 pretty.
 
 Don't sell it pls.
+
+Reads complete class sizes, and even uses vsync so the overlay 
+doesn't eat all of your cpu.  Regarding speeds, this is about as 
+smooth and fast as an external gets.
+
+
+As for screenshots, it doesn't do anything to mitigate them.  You 
+can use my screenshot hooker I released on UC, I'll add a repo for 
+it here as well.  The class name on the overlay is set and ready 
+to be used with it.
