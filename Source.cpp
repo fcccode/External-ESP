@@ -27,19 +27,6 @@ int teamnames = false;
 int vsync = true;
 #pragma endregion
 
-void DrawPlayer(Direct2DOverlay* ov, Manager gm,  Player player, D3DXCOLOR color) {
-	D3DXVECTOR3 footcpy = player.Location;
-	D3DXVECTOR3 headcpy = footcpy;
-	footcpy.y += player.SoldierHeight +.25;
-	if ((gm.WorldToScreen(footcpy)) && (gm.WorldToScreen(headcpy))) {
-		float dst = Distance3D(footcpy, headcpy);
-		float portion = 5;
-		ov->DrawLine(footcpy.x - (dst / portion), footcpy.y, footcpy.x + (dst / portion), footcpy.y, 3, color.r, color.g, color.b);
-		ov->DrawLine(headcpy.x - (dst / portion), headcpy.y, headcpy.x + (dst / portion), headcpy.y, 3, color.r, color.g, color.b);
-		ov->DrawLine(headcpy.x - (dst / portion), headcpy.y, footcpy.x - (dst / portion), footcpy.y, 3, color.r, color.g, color.b);
-		ov->DrawLine(headcpy.x + (dst / portion), headcpy.y, footcpy.x + (dst / portion), footcpy.y, 3, color.r, color.g, color.b);
-	}
-}
 
 int ticks = 0;
 int beforeclock = 0;
